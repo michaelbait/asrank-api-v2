@@ -1,0 +1,50 @@
+# exe:build-config.pl
+# path:/home/bhuffake/github/asrank-tools/data-preprocessing/
+#      20171201
+date=20171201
+
+# corrections
+corrections_file=/home/bhuffake/github/asrank-tools/data-preprocessing/corrections/corrections.json
+
+source: {"name":"Netacuity (Digital Elements)", "url":"https://www.digitalelement.com/solutions/", "date":"20171201"}
+# Netacuity Files
+loc_file=/data/external/netacuity-dumps/Edge-processed/2017-12-01.netacq-4-locations.csv.gz
+block_file=/data/external/netacuity-dumps/Edge-processed/2017-12-01.netacq-4-blocks.csv.gz
+
+source: {"name":"Organization", "url":"https://www.caida.org/data/as-organizations/", "date":"20171001"}
+# Organiztion File
+asn_org_file=/data/external/topology-asdata/as-organizations/20171001.as-org2info.txt.gz
+
+source: {"name":"AS Relationships", "url":"http://www.caida.org/data/as-relationships/", "date":"20171201"}
+# AS Relationship files
+prefix_asn_file=/data/external/as-rank-ribs/20171201/20171201.prefix2as.bz2
+asn_cone_file=/data/external/as-rank-ribs/20171201/20171201.ppdc-ases.txt.bz2
+prefix_cone_file=/data/external/as-rank-ribs/20171201/20171201.ppdc-prefix.txt.bz2
+path_file=/data/external/as-rank-ribs/20171201/20171201.paths.bz2
+asn_rel_file=/data/external/as-rank-ribs/20171201/20171201.as-rel.txt.bz2
+asn_path_file=/data/external/as-rank-ribs/20171201/20171201.all-paths.bz2
+asn_assigned_file=/data/external/as-rank-ribs/20171201/20171201.assigned.bz2
+
+# AS Link Geo (hard coded)
+asn_rel_geo_file=/scratch/bhuffake/as-graph/201603/201603.as-rel-geo.txt
+asn_rel_geo_loc_file=/scratch/bhuffake/as-graph/201603/201603.locations.txt
+
+# Intermediate files
+asn_count_file=./20171201-asn_count.txt
+org_count_file=./20171201-org_count.txt
+asn_geo_file=./20171201-asn-geo.txt
+asn_loc_file=./20171201-asn_loc.txt
+asn_count_file=./20171201-asn_count.txt
+asn_link_count_file=./20171201-asn_link_count.txt
+count_info_file=./20171201-count_info.jsonl
+asn_path_info_file=./20171201-path_info.jsonl
+
+# JSONL files
+dataset_jsonl_file=./20171201.dataset.jsonl
+asns_jsonl_file=./20171201.asns.jsonl
+orgs_jsonl_file=./20171201.orgs.jsonl
+asn_links_jsonl_file=./20171201.links.jsonl
+locations_jsonl_file=./20171201.locations.jsonl
+asn_paths_jsonl_file=./20171201.paths.jsonl
+asn_cones_jsonl_file=./20171201.asn_cones.jsonl
+

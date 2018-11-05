@@ -1,0 +1,57 @@
+# exe:build-config.pl
+# path:/home/bhuffake/github/asrank-tools/data-preprocessing/
+#      20180701
+date=20180701
+
+# corrections
+corrections_file=/home/bhuffake/github/asrank-tools/data-preprocessing/corrections/corrections.json
+
+source: {"name":"Country", "url":"https://www.geonames", "date":"20180629"}
+# Country
+country_file=/scratch/bhuffake/geographic/countries.jsonl
+
+source: {"name":"Netacuity (Digital Elements)", "url":"https://www.digitalelement.com/solutions/", "date":"20180629"}
+# Netacuity Files
+loc_file=/data/external/netacuity-dumps/Edge-processed/2018-06-29.netacq-4-locations.csv.gz
+block_file=/data/external/netacuity-dumps/Edge-processed/2018-06-29.netacq-4-blocks.csv.gz
+
+source: {"name":"Organization", "url":"https://www.caida.org/data/as-organizations/", "date":"20180401"}
+# Organiztion File
+asn_org_file=/data/external/topology-asdata/as-organizations/20180401.as-org2info.txt.gz
+
+source: {"name":"AS Relationships", "url":"http://www.caida.org/data/as-relationships/", "date":"20180701"}
+# AS Relationship files
+prefix_asn_file=/data/external/as-rank-ribs/20180701/20180701.prefix2as.bz2
+asn_cone_file=/data/external/as-rank-ribs/20180701/20180701.ppdc-ases.txt.bz2
+prefix_cone_file=/data/external/as-rank-ribs/20180701/20180701.ppdc-prefix.txt.bz2
+path_file=/data/external/as-rank-ribs/20180701/20180701.paths.bz2
+asn_rel_file=/data/external/as-rank-ribs/20180701/20180701.as-rel.txt.bz2
+asn_path_file=/data/external/as-rank-ribs/20180701/20180701.all-paths.bz2
+
+source: {"name":"AS Assigned", "url":"http://www.caida.org/data/as-relationships/", "date":"20180701"}
+# AS Assigned
+asn_assigned_file=/data/external/as-rank-ribs/20180701/20180701.assigned.bz2
+
+# AS Link Geo (hard coded)
+asn_rel_geo_file=/scratch/bhuffake/as-graph/201603/201603.as-rel-geo.txt
+asn_rel_geo_loc_file=/scratch/bhuffake/as-graph/201603/201603.locations.txt
+
+# Intermediate files
+asn_count_file=./20180701-asn_count.txt
+org_count_file=./20180701-org_count.txt
+asn_geo_file=./20180701-asn-geo.txt
+asn_loc_file=./20180701-asn_loc.txt
+asn_count_file=./20180701-asn_count.txt
+asn_link_count_file=./20180701-asn_link_count.txt
+count_info_file=./20180701-count_info.jsonl
+asn_path_info_file=./20180701-path_info.jsonl
+
+# JSONL files
+dataset_jsonl_file=./20180701.dataset.jsonl
+asns_jsonl_file=./20180701.asns.jsonl
+orgs_jsonl_file=./20180701.orgs.jsonl
+asn_links_jsonl_file=./20180701.links.jsonl
+locations_jsonl_file=./20180701.locations.jsonl
+asn_paths_jsonl_file=./20180701.paths.jsonl
+asn_cones_jsonl_file=./20180701.asn_cones.jsonl
+

@@ -1,0 +1,10 @@
+nelmio_api_doc:
+  documentation:
+    schemes: [http, https]
+    info:
+      title: ARank API Doc
+      description: Independent networks (Autonomous Systems, or ASes) engage in typically voluntary bilateral interconnection ("peering") agreements to provide reachability to each other for some subset of the Internet. <br />An AS's rank is based on it's customer cone size, which in turn is is inferred from BGP paths by CAIDA's AS relationships inference algorithm.
+      version: 2.0.0
+  areas: # to filter documented areas
+    path_patterns:
+    - ^/api(?!/doc$) # Accepts routes under /api except /api/doc
